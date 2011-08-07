@@ -5,7 +5,7 @@ require "bundler/capistrano"
 
 set :rvm_ruby_string, "1.9.2-p290"
 
-set :application, "ben_hughes"
+set :application, "jetting_rubyist"
 set :repository, "git@github.com:rubiety/#{application}"
 
 set :scm, :git
@@ -16,8 +16,8 @@ ssh_options[:port] = 2234
 
 set :user, "apps"
 set :use_sudo, false
-set :deploy_to, "/var/www/benhughes.name"
-set :main_server, "benhughes.name"
+set :deploy_to, "/var/www/jettingrubyist.com"
+set :main_server, "jettingrubyist.com"
 
 role :web, main_server
 role :app, main_server
